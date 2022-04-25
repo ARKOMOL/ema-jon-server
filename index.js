@@ -47,6 +47,13 @@ app.get('/',(req,res)=>{
 })
 
 
+// heroku 
+app.get('/hero',(req,res)=>{
+    res.send('hero meets heroku')
+})
+
+// =====================
+
 app.listen(port,()=>{
     console.log('john is running in runnig ',port);
 })
